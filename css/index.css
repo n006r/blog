@@ -22,10 +22,12 @@ body {
 p:last-child {
   margin-bottom: 0;
 }
-p,
-.tmpl-post li,
-img {
+blockquote,
+.tmpl-post li {
   max-width: 37.5em; /* 600px /16 */
+}
+img {
+  max-width: 100%;
 }
 p,
 .tmpl-post li {
@@ -223,4 +225,79 @@ a[href].direct-link:focus:visited,
 :hover > a[href].direct-link,
 :hover > a[href].direct-link:visited {
   color: #aaa;
+}
+
+
+article.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-width-limiter {
+  width: 100%;
+}
+
+section > section {
+  margin-left: 1em;
+}
+
+section + section {
+  margin-top: 1rem;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+figure+figure {
+  margin-top: 3rem;
+}
+
+figcaption {
+  margin-top: .7rem;
+  font-size: 0.8rem;
+}
+
+figure img,
+figure video {
+  max-width: 100%;
+}
+
+figure blockquote {
+  padding: 1em 40px;
+  margin: 1em 0;
+  border-left: 6px solid var(--gray);
+  /* display: flex; */
+  /* flex-direction: column; */
+  min-width: 100%;
+  /* flex-grow: 1; */
+  /* flex-shrink: 0; */
+}
+
+figure blockquote+figcaption {
+  align-self: flex-end;
+}
+
+@media (min-width: 600px) {
+  .content-width-limiter {
+    max-width: 60vw;
+  }
+}
+
+@media (min-width: 1200px) {
+  .content-width-limiter {
+    max-width: 720px;
+  }
+  img.to-left {
+    float: left;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+    margin-left: -7rem;
+  }
 }

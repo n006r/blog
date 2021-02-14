@@ -2,9 +2,13 @@
 layout: layouts/base.njk
 templateClass: tmpl-post
 ---
-<h1>{{ title }}</h1>
+<article class="root">
+  <div class="content-width-limiter">
+    <h1>{{ title }}</h1>
 
-{{ content | safe }}
+    {{ content | safe }}
+  </div>
+</article>
 
 <hr>
 <ul>
