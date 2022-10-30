@@ -1,7 +1,8 @@
 /* Defaults */
 :root {
-  --font-family: -apple-system, system-ui, sans-serif;
-  --font-family-monospace: Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
+  --font-family: Fira Sans, sans-serif, Arial;
+  --font-family-headers: Open Sans, sans-serif, Arial;
+  --font-family-monospace: Fira Mono, Consolas, Menlo, Monaco, Andale Mono WT, Andale Mono, Lucida Console, Lucida Sans Typewriter, DejaVu Sans Mono, Bitstream Vera Sans Mono, Liberation Mono, Nimbus Mono L, Courier New, Courier, monospace;
 }
 
 /* Theme colors */
@@ -41,7 +42,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: var(--font-family);
+  font-family: var(--font-family-headers);
   color: var(--text-color);
   background-color: var(--background-color);
 }
@@ -262,6 +263,10 @@ article.root {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+article p {
+  font-family: var(--font-family);
 }
 
 .content-width-limiter {
