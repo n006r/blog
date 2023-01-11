@@ -1,21 +1,21 @@
 {
   "title": "домашняя страница n06rin",
-  "url": "https://n06rin.github.io/",
+  "url": "https://n006.ru/",
   "language": "ru",
   "description": "мои проекты и статьи на разные темы",
   "feed": {
     "subtitle": "rss-лента сайта erman.cc",
     "filename": "feed.xml",
     "path": "/feed/feed.xml",
-    "id": "https://n06rin.github.io/"
+    "id": "https://n006.ru"
   },
   "jsonfeed": {
     "path": "/feed/feed.json",
-    "url": "https://n06rin.github.io/feed/feed.json"
+    "url": "https://n006.ru/feed/feed.json"
   },
   "author": {
     "name": "Ермаков Николай, n06rin, erman",
-    "email": "me@erman.cc",
-    "url": "https://n06rin.github.io/about-me/"
+    "email": "erm@n006.ru",
+    "url": "https://n006.ru/about-me/"
   }
 }
